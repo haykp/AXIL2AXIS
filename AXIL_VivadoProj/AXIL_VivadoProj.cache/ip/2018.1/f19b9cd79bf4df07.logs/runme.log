@@ -1,0 +1,1302 @@
+
+*** Running vivado
+    with args -log axi_protocol_checker_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_protocol_checker_0.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source axi_protocol_checker_0.tcl -notrace
+Command: synth_design -top axi_protocol_checker_0 -part xc7k70tfbv676-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2908 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 393.207 ; gain = 101.406
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_checker_0' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/synth/axi_protocol_checker_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_checker_v2_0_2_top' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:5927]
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_WSTRB bound to: 1 - type: integer 
+	Parameter C_PC_MAXRBURSTS bound to: 8 - type: integer 
+	Parameter C_PC_MAXWBURSTS bound to: 8 - type: integer 
+	Parameter C_PC_EXMON_WIDTH bound to: 0 - type: integer 
+	Parameter C_PC_AW_MAXWAITS bound to: 0 - type: integer 
+	Parameter C_PC_AR_MAXWAITS bound to: 0 - type: integer 
+	Parameter C_PC_W_MAXWAITS bound to: 0 - type: integer 
+	Parameter C_PC_R_MAXWAITS bound to: 0 - type: integer 
+	Parameter C_PC_B_MAXWAITS bound to: 0 - type: integer 
+	Parameter C_PC_MAX_CONTINUOUS_RTRANSFERS_WAITS bound to: 0 - type: integer 
+	Parameter C_PC_MAX_CONTINUOUS_WTRANSFERS_WAITS bound to: 0 - type: integer 
+	Parameter C_PC_MAX_WLAST_TO_AWVALID_WAITS bound to: 0 - type: integer 
+	Parameter C_PC_MAX_WRITE_TO_BVALID_WAITS bound to: 0 - type: integer 
+	Parameter C_PC_LIGHT_WEIGHT bound to: 0 - type: integer 
+	Parameter C_PC_MESSAGE_LEVEL bound to: 2 - type: integer 
+	Parameter C_PC_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_PC_MAX_BURST_LENGTH bound to: 1 - type: integer 
+	Parameter C_PC_HAS_SYSTEM_RESET bound to: 0 - type: integer 
+	Parameter C_ENABLE_CONTROL bound to: 0 - type: integer 
+	Parameter C_PC_STATUS_WIDTH bound to: 160 - type: integer 
+	Parameter C_CHK_ERR_RESP bound to: 0 - type: integer 
+	Parameter C_ENABLE_MARK_DEBUG bound to: 1 - type: integer 
+	Parameter P_NUM_REPORTED_CHECKS bound to: 108 - type: integer 
+	Parameter LP_AXI_SIZE bound to: 3'b010 
+	Parameter P_NUM_RTHREADS bound to: 2 - type: integer 
+	Parameter P_NUM_WTHREADS bound to: 2 - type: integer 
+	Parameter P_INDEX_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "no" *) [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6054]
+INFO: [Synth 8-5534] Detected attribute (* iob = "false" *) [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6054]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_checker_v2_0_2_threadcam' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:5522]
+	Parameter C_NUM_THREADS bound to: 2 - type: integer 
+	Parameter C_INDEX_WIDTH bound to: 1 - type: integer 
+	Parameter C_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_NUM_OUTSTANDING bound to: 8 - type: integer 
+	Parameter P_ACCEPTANCE_SIZE bound to: 3 - type: integer 
+	Parameter P_BYPASS bound to: 0 - type: integer 
+	Parameter P_FULLY_PIPELINED bound to: 1 - type: integer 
+	Parameter P_PIPELINED_REG_STALL bound to: 2 - type: integer 
+	Parameter P_ID_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:5666]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_checker_v2_0_2_threadcam' (4#1) [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:5522]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_checker_v2_0_2_core' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2580]
+	Parameter C_ERROR_COUNT bound to: 160 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter MAXRBURSTS bound to: 8 - type: integer 
+	Parameter MAXWBURSTS bound to: 8 - type: integer 
+	Parameter EXMON_WIDTH bound to: 0 - type: integer 
+	Parameter RecommendOn bound to: 1 - type: integer 
+	Parameter RecommendWaitOn bound to: 1 - type: integer 
+	Parameter MAX_AW_WAITS bound to: 0 - type: integer 
+	Parameter MAX_AR_WAITS bound to: 0 - type: integer 
+	Parameter MAX_W_WAITS bound to: 0 - type: integer 
+	Parameter MAX_R_WAITS bound to: 0 - type: integer 
+	Parameter MAX_B_WAITS bound to: 0 - type: integer 
+	Parameter MAX_CONTINUOUS_RTRANSFERS_WAITS bound to: 0 - type: integer 
+	Parameter MAX_CONTINUOUS_WTRANSFERS_WAITS bound to: 0 - type: integer 
+	Parameter MAX_WLAST_TO_AWVALID_WAITS bound to: 0 - type: integer 
+	Parameter MAX_WRITE_TO_BVALID_WAITS bound to: 0 - type: integer 
+	Parameter LIGHT_WEIGHT bound to: 0 - type: integer 
+	Parameter C_HAS_WSTRB bound to: 1 - type: integer 
+	Parameter C_PC_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_PC_HAS_SYSTEM_RESET bound to: 0 - type: integer 
+	Parameter C_PC_MAX_BURST_LENGTH bound to: 1 - type: integer 
+	Parameter C_INDEX_WIDTH bound to: 1 - type: integer 
+	Parameter C_NUM_RTHREADS bound to: 2 - type: integer 
+	Parameter C_NUM_WTHREADS bound to: 2 - type: integer 
+	Parameter C_CHK_ERR_RESP bound to: 0 - type: integer 
+	Parameter WEXCL bound to: 0 - type: integer 
+	Parameter WALENLO bound to: 1 - type: integer 
+	Parameter WALENHI bound to: 8 - type: integer 
+	Parameter WADDRLO bound to: 0 - type: integer 
+	Parameter WADDRHI bound to: 6 - type: integer 
+	Parameter WASIZELO bound to: 7 - type: integer 
+	Parameter WASIZEHI bound to: 9 - type: integer 
+	Parameter STRB_WIDTH bound to: 4 - type: integer 
+	Parameter LOG2_STRB_WIDTH bound to: 2 - type: integer 
+	Parameter ID_MAX bound to: 0 - type: integer 
+	Parameter P_RTHREAD_SIZE bound to: 1 - type: integer 
+	Parameter P_MAXRBURSTS_LOG bound to: 3 - type: integer 
+	Parameter P_WTHREAD_SIZE bound to: 1 - type: integer 
+	Parameter P_MAXWBURSTS_LOG bound to: 3 - type: integer 
+	Parameter ADDRLO bound to: 0 - type: integer 
+	Parameter ADDRHI bound to: 6 - type: integer 
+	Parameter EXCL bound to: 7 - type: integer 
+	Parameter ALENLO bound to: 8 - type: integer 
+	Parameter ALENHI bound to: 15 - type: integer 
+	Parameter ASIZELO bound to: 16 - type: integer 
+	Parameter ASIZEHI bound to: 18 - type: integer 
+	Parameter BURSTLO bound to: 19 - type: integer 
+	Parameter BURSTHI bound to: 20 - type: integer 
+	Parameter LP_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter LP_EXMON_WIDTH bound to: 1 - type: integer 
+	Parameter DATA_MAX bound to: 31 - type: integer 
+	Parameter EXMON_HI bound to: 1'b1 
+	Parameter AWUSER_MAX bound to: 0 - type: integer 
+	Parameter WUSER_MAX bound to: 0 - type: integer 
+	Parameter BUSER_MAX bound to: 0 - type: integer 
+	Parameter ARUSER_MAX bound to: 0 - type: integer 
+	Parameter RUSER_MAX bound to: 0 - type: integer 
+	Parameter STRB_MAX bound to: 3 - type: integer 
+	Parameter STRB_1 bound to: 4'b0001 
+	Parameter L_CHECK_PIPE_WIDTH bound to: 7 - type: integer 
+	Parameter L_NUM_CHKSTRB_NIBS bound to: 1 - type: integer 
+	Parameter L_NUM_CHKSTRB_NIB_LANES bound to: 4 - type: integer 
+	Parameter L_NUM_CHKSTRB_EQ_LANES bound to: 1 - type: integer 
+	Parameter L_NUM_CHKSTRB_AND1_LANES bound to: 1 - type: integer 
+	Parameter L_NUM_CHKSTRB_AND2_LANES bound to: 1 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "no" *) [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2839]
+INFO: [Synth 8-5534] Detected attribute (* iob = "false" *) [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2839]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_checker_v2_0_2_syn_fifo' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3927]
+	Parameter C_DATA_WIDTH bound to: 21 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter RAM_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3959]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_checker_v2_0_2_syn_fifo' (5#1) [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3927]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_checker_v2_0_2_axi4litepc_asr_inline' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:57]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_checker_v2_0_2_axi4litepc_asr_inline' (6#1) [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:57]
+INFO: [Synth 8-226] default block is never used [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3144]
+INFO: [Synth 8-226] default block is never used [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3166]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_checker_v2_0_2_axi4pc_asr_inline' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:145]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ID_WIDTH bound to: 1 - type: integer 
+	Parameter AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter MAXRBURSTS bound to: 8 - type: integer 
+	Parameter MAXWBURSTS bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter EXMON_WIDTH bound to: 4 - type: integer 
+	Parameter DATA_MAX bound to: 31 - type: integer 
+	Parameter ADDR_MAX bound to: 31 - type: integer 
+	Parameter STRB_WIDTH bound to: 4 - type: integer 
+	Parameter STRB_MAX bound to: 3 - type: integer 
+	Parameter ID_MAX bound to: 0 - type: integer 
+	Parameter EXMON_MAX bound to: 3 - type: integer 
+	Parameter EXMON_HI bound to: 4'b1111 
+	Parameter AWUSER_MAX bound to: 0 - type: integer 
+	Parameter WUSER_MAX bound to: 0 - type: integer 
+	Parameter BUSER_MAX bound to: 0 - type: integer 
+	Parameter ARUSER_MAX bound to: 0 - type: integer 
+	Parameter RUSER_MAX bound to: 0 - type: integer 
+	Parameter MAX_AW_WAITS bound to: 0 - type: integer 
+	Parameter MAX_AR_WAITS bound to: 0 - type: integer 
+	Parameter MAX_W_WAITS bound to: 0 - type: integer 
+	Parameter MAX_R_WAITS bound to: 0 - type: integer 
+	Parameter MAX_B_WAITS bound to: 0 - type: integer 
+	Parameter MAX_CONTINUOUS_RTRANSFERS_WAITS bound to: 0 - type: integer 
+	Parameter MAX_CONTINUOUS_WTRANSFERS_WAITS bound to: 0 - type: integer 
+	Parameter MAX_WLAST_TO_AWVALID_WAITS bound to: 0 - type: integer 
+	Parameter MAX_WRITE_TO_BVALID_WAITS bound to: 0 - type: integer 
+	Parameter LIGHT_WEIGHT bound to: 0 - type: integer 
+	Parameter L_AW_WAIT_WIDTH bound to: 1 - type: integer 
+	Parameter L_AR_WAIT_WIDTH bound to: 1 - type: integer 
+	Parameter L_W_WAIT_WIDTH bound to: 1 - type: integer 
+	Parameter L_R_WAIT_WIDTH bound to: 1 - type: integer 
+	Parameter L_B_WAIT_WIDTH bound to: 1 - type: integer 
+	Parameter L_WVALID_WAIT_WIDTH bound to: 1 - type: integer 
+	Parameter L_AWVALID_WAIT_WIDTH bound to: 1 - type: integer 
+	Parameter L_BVALID_WAIT_WIDTH bound to: 1 - type: integer 
+	Parameter L_RVALID_WAIT_WIDTH bound to: 1 - type: integer 
+	Parameter P_W_OUTSTANDING_WIDTH bound to: 3 - type: integer 
+	Parameter P_R_OUTSTANDING_WIDTH bound to: 3 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element gen_deflt_chks.s118_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2312]
+WARNING: [Synth 8-6014] Unused sequential element gen_deflt_chks.s120_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2321]
+WARNING: [Synth 8-6014] Unused sequential element gen_deflt_chks.s122_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2330]
+WARNING: [Synth 8-6014] Unused sequential element gen_deflt_chks.s124_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2339]
+WARNING: [Synth 8-6014] Unused sequential element gen_deflt_chks.s126_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2348]
+WARNING: [Synth 8-6014] Unused sequential element gen_deflt_chks.s128_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2357]
+WARNING: [Synth 8-6014] Unused sequential element gen_deflt_chks.s130_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2366]
+WARNING: [Synth 8-6014] Unused sequential element gen_deflt_chks.s132_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2375]
+WARNING: [Synth 8-6014] Unused sequential element gen_deflt_chks.s134_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2384]
+INFO: [Synth 8-4471] merging register 'gen_deflt_chks.ASR_80_reg' into 'gen_deflt_chks.ASR_79_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2323]
+INFO: [Synth 8-4471] merging register 'gen_deflt_chks.ASR_81_reg' into 'gen_deflt_chks.ASR_79_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2332]
+INFO: [Synth 8-4471] merging register 'gen_deflt_chks.ASR_82_reg' into 'gen_deflt_chks.ASR_79_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2341]
+INFO: [Synth 8-4471] merging register 'gen_deflt_chks.ASR_83_reg' into 'gen_deflt_chks.ASR_79_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2350]
+INFO: [Synth 8-4471] merging register 'gen_deflt_chks.ASR_84_reg' into 'gen_deflt_chks.ASR_79_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2359]
+INFO: [Synth 8-4471] merging register 'gen_deflt_chks.ASR_85_reg' into 'gen_deflt_chks.ASR_79_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2368]
+INFO: [Synth 8-4471] merging register 'gen_deflt_chks.ASR_86_reg' into 'gen_deflt_chks.ASR_79_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2377]
+INFO: [Synth 8-4471] merging register 'gen_deflt_chks.ASR_87_reg' into 'gen_deflt_chks.ASR_79_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2386]
+INFO: [Synth 8-4471] merging register 'ASR_21_reg' into 'gen_deflt_chks.ASR_79_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:383]
+INFO: [Synth 8-4471] merging register 'ASR_29_reg' into 'gen_deflt_chks.ASR_79_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:383]
+INFO: [Synth 8-4471] merging register 'ASR_37_reg' into 'gen_deflt_chks.ASR_79_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:383]
+INFO: [Synth 8-4471] merging register 'ASR_58_reg' into 'gen_deflt_chks.ASR_79_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:383]
+INFO: [Synth 8-4471] merging register 'ASR_68_reg' into 'gen_deflt_chks.ASR_79_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:383]
+INFO: [Synth 8-4471] merging register 'ASRX_1_reg' into 'gen_deflt_chks.ASR_79_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:383]
+INFO: [Synth 8-4471] merging register 'ASRX_2_reg' into 'gen_deflt_chks.ASR_79_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:383]
+INFO: [Synth 8-4471] merging register 'ASRX_3_reg' into 'gen_deflt_chks.ASR_79_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:383]
+INFO: [Synth 8-4471] merging register 'ASRX_4_reg' into 'gen_deflt_chks.ASR_79_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:383]
+WARNING: [Synth 8-6014] Unused sequential element gen_deflt_chks.ASR_80_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2323]
+WARNING: [Synth 8-6014] Unused sequential element gen_deflt_chks.ASR_81_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2332]
+WARNING: [Synth 8-6014] Unused sequential element gen_deflt_chks.ASR_82_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2341]
+WARNING: [Synth 8-6014] Unused sequential element gen_deflt_chks.ASR_83_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2350]
+WARNING: [Synth 8-6014] Unused sequential element gen_deflt_chks.ASR_84_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2359]
+WARNING: [Synth 8-6014] Unused sequential element gen_deflt_chks.ASR_85_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2368]
+WARNING: [Synth 8-6014] Unused sequential element gen_deflt_chks.ASR_86_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2377]
+WARNING: [Synth 8-6014] Unused sequential element gen_deflt_chks.ASR_87_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2386]
+WARNING: [Synth 8-6014] Unused sequential element ASR_21_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:383]
+WARNING: [Synth 8-6014] Unused sequential element ASR_29_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:383]
+WARNING: [Synth 8-6014] Unused sequential element ASR_37_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:383]
+WARNING: [Synth 8-6014] Unused sequential element ASR_58_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:383]
+WARNING: [Synth 8-6014] Unused sequential element ASR_68_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:383]
+WARNING: [Synth 8-6014] Unused sequential element ASRX_1_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:383]
+WARNING: [Synth 8-6014] Unused sequential element ASRX_2_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:383]
+WARNING: [Synth 8-6014] Unused sequential element ASRX_3_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:383]
+WARNING: [Synth 8-6014] Unused sequential element ASRX_4_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:383]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_checker_v2_0_2_axi4pc_asr_inline' (7#1) [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:145]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_checker_v2_0_2_syn_fifo__parameterized0' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3927]
+	Parameter C_DATA_WIDTH bound to: 19 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter RAM_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_checker_v2_0_2_syn_fifo__parameterized0' (7#1) [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3927]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_checker_v2_0_2_syn_fifo__parameterized1' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3927]
+	Parameter C_DATA_WIDTH bound to: 13 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter RAM_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_checker_v2_0_2_syn_fifo__parameterized1' (7#1) [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3927]
+WARNING: [Synth 8-324] index 2 out of range [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3784]
+WARNING: [Synth 8-6014] Unused sequential element reset_resync_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2846]
+WARNING: [Synth 8-6014] Unused sequential element ExclIdDelta_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3277]
+WARNING: [Synth 8-6014] Unused sequential element ExclQos_reg[1] was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3409]
+WARNING: [Synth 8-6014] Unused sequential element ExclQos_reg[0] was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3409]
+WARNING: [Synth 8-6014] Unused sequential element ExclUser_reg[1] was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3411]
+WARNING: [Synth 8-6014] Unused sequential element ExclUser_reg[0] was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3411]
+WARNING: [Synth 8-6014] Unused sequential element StrbAddr_q1_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3698]
+WARNING: [Synth 8-6014] Unused sequential element StrbAddr_q2_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3699]
+WARNING: [Synth 8-6014] Unused sequential element StrbSize_q1_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3700]
+WARNING: [Synth 8-6014] Unused sequential element StrbSize_q2_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3701]
+INFO: [Synth 8-4471] merging register 'reset_pulse_violation_i_reg' into 'aresetn_i_q_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2899]
+INFO: [Synth 8-4471] merging register 'ASR_102_reg' into 'aresetn_i_q_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2915]
+INFO: [Synth 8-4471] merging register 'ASR_103_reg' into 'aresetn_i_q_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2916]
+WARNING: [Synth 8-6014] Unused sequential element count_clk_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2869]
+WARNING: [Synth 8-6014] Unused sequential element en_chk_r_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2889]
+WARNING: [Synth 8-6014] Unused sequential element reset_pulse_violation_i_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2899]
+WARNING: [Synth 8-6014] Unused sequential element ASR_102_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2915]
+WARNING: [Synth 8-6014] Unused sequential element ASR_103_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2916]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_checker_v2_0_2_core' (8#1) [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2580]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6452]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_checker_v2_0_2_reporter' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:4260]
+	Parameter C_PC_MESSAGE_LEVEL bound to: 2 - type: integer 
+	Parameter C_PC_STATUS_WIDTH bound to: 108 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_PC_MAXRBURSTS bound to: 8 - type: integer 
+	Parameter C_PC_MAXWBURSTS bound to: 8 - type: integer 
+	Parameter C_ENABLE_MARK_DEBUG bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_checker_v2_0_2_reporter' (9#1) [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:4260]
+WARNING: [Synth 8-6014] Unused sequential element reset_resync_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6061]
+WARNING: [Synth 8-6014] Unused sequential element pc_snapshot_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6285]
+INFO: [Synth 8-4471] merging register 'awlock_q_reg[0:0]' into 'awid_q_reg[0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6188]
+INFO: [Synth 8-4471] merging register 'awqos_q_reg[3:0]' into 'awcache_q_reg[3:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6191]
+INFO: [Synth 8-4471] merging register 'awregion_q_reg[3:0]' into 'awcache_q_reg[3:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6192]
+INFO: [Synth 8-4471] merging register 'awuser_q_reg[0:0]' into 'awid_q_reg[0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6193]
+INFO: [Synth 8-4471] merging register 'wuser_q_reg[0:0]' into 'awid_q_reg[0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6199]
+INFO: [Synth 8-4471] merging register 'bid_q_reg[0:0]' into 'awid_q_reg[0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6202]
+INFO: [Synth 8-4471] merging register 'buser_q_reg[0:0]' into 'awid_q_reg[0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6204]
+INFO: [Synth 8-4471] merging register 'arid_q_reg[0:0]' into 'awid_q_reg[0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6207]
+INFO: [Synth 8-4471] merging register 'arlen_q_reg[7:0]' into 'awlen_q_reg[7:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6209]
+INFO: [Synth 8-4471] merging register 'arsize_q_reg[2:0]' into 'awsize_q_reg[2:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6210]
+INFO: [Synth 8-4471] merging register 'arburst_q_reg[1:0]' into 'awburst_q_reg[1:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6211]
+INFO: [Synth 8-4471] merging register 'arlock_q_reg[0:0]' into 'awid_q_reg[0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6212]
+INFO: [Synth 8-4471] merging register 'arcache_q_reg[3:0]' into 'awcache_q_reg[3:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6213]
+INFO: [Synth 8-4471] merging register 'arqos_q_reg[3:0]' into 'awcache_q_reg[3:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6215]
+INFO: [Synth 8-4471] merging register 'arregion_q_reg[3:0]' into 'awcache_q_reg[3:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6216]
+INFO: [Synth 8-4471] merging register 'aruser_q_reg[0:0]' into 'awid_q_reg[0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6217]
+INFO: [Synth 8-4471] merging register 'rid_q_reg[0:0]' into 'awid_q_reg[0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6220]
+INFO: [Synth 8-4471] merging register 'rlast_q_reg' into 'wlast_q_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6221]
+INFO: [Synth 8-4471] merging register 'ruser_q_reg[0:0]' into 'awid_q_reg[0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6224]
+WARNING: [Synth 8-6014] Unused sequential element awlock_q_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6188]
+WARNING: [Synth 8-6014] Unused sequential element awqos_q_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6191]
+WARNING: [Synth 8-6014] Unused sequential element awregion_q_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6192]
+WARNING: [Synth 8-6014] Unused sequential element awuser_q_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6193]
+WARNING: [Synth 8-6014] Unused sequential element wuser_q_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6199]
+WARNING: [Synth 8-6014] Unused sequential element bid_q_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6202]
+WARNING: [Synth 8-6014] Unused sequential element buser_q_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6204]
+WARNING: [Synth 8-6014] Unused sequential element arid_q_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6207]
+WARNING: [Synth 8-6014] Unused sequential element arlen_q_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6209]
+WARNING: [Synth 8-6014] Unused sequential element arsize_q_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6210]
+WARNING: [Synth 8-6014] Unused sequential element arburst_q_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6211]
+WARNING: [Synth 8-6014] Unused sequential element arlock_q_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6212]
+WARNING: [Synth 8-6014] Unused sequential element arcache_q_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6213]
+WARNING: [Synth 8-6014] Unused sequential element arqos_q_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6215]
+WARNING: [Synth 8-6014] Unused sequential element arregion_q_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6216]
+WARNING: [Synth 8-6014] Unused sequential element aruser_q_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6217]
+WARNING: [Synth 8-6014] Unused sequential element rid_q_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6220]
+WARNING: [Synth 8-6014] Unused sequential element rlast_q_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6221]
+WARNING: [Synth 8-6014] Unused sequential element ruser_q_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6224]
+INFO: [Synth 8-4471] merging register 'awlock_qq_reg[0:0]' into 'awid_qq_reg[0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6234]
+INFO: [Synth 8-4471] merging register 'awqos_qq_reg[3:0]' into 'awcache_qq_reg[3:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6237]
+INFO: [Synth 8-4471] merging register 'awregion_qq_reg[3:0]' into 'awcache_qq_reg[3:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6238]
+INFO: [Synth 8-4471] merging register 'awuser_qq_reg[0:0]' into 'awid_qq_reg[0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6239]
+INFO: [Synth 8-4471] merging register 'wuser_qq_reg[0:0]' into 'awid_qq_reg[0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6245]
+INFO: [Synth 8-4471] merging register 'bid_qq_reg[0:0]' into 'awid_qq_reg[0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6248]
+INFO: [Synth 8-4471] merging register 'buser_qq_reg[0:0]' into 'awid_qq_reg[0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6250]
+INFO: [Synth 8-4471] merging register 'arid_qq_reg[0:0]' into 'awid_qq_reg[0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6253]
+INFO: [Synth 8-4471] merging register 'arlen_qq_reg[7:0]' into 'awlen_qq_reg[7:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6255]
+INFO: [Synth 8-4471] merging register 'arsize_qq_reg[2:0]' into 'awsize_qq_reg[2:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6256]
+INFO: [Synth 8-4471] merging register 'arburst_qq_reg[1:0]' into 'awburst_qq_reg[1:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6257]
+INFO: [Synth 8-4471] merging register 'arlock_qq_reg[0:0]' into 'awid_qq_reg[0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6258]
+INFO: [Synth 8-4471] merging register 'arcache_qq_reg[3:0]' into 'awcache_qq_reg[3:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6259]
+INFO: [Synth 8-4471] merging register 'arqos_qq_reg[3:0]' into 'awcache_qq_reg[3:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6261]
+INFO: [Synth 8-4471] merging register 'arregion_qq_reg[3:0]' into 'awcache_qq_reg[3:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6262]
+INFO: [Synth 8-4471] merging register 'aruser_qq_reg[0:0]' into 'awid_qq_reg[0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6263]
+INFO: [Synth 8-4471] merging register 'rid_qq_reg[0:0]' into 'awid_qq_reg[0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6266]
+INFO: [Synth 8-4471] merging register 'rlast_qq_reg' into 'wlast_qq_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6267]
+INFO: [Synth 8-4471] merging register 'ruser_qq_reg[0:0]' into 'awid_qq_reg[0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6270]
+WARNING: [Synth 8-6014] Unused sequential element awlock_qq_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6234]
+WARNING: [Synth 8-6014] Unused sequential element awqos_qq_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6237]
+WARNING: [Synth 8-6014] Unused sequential element awregion_qq_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6238]
+WARNING: [Synth 8-6014] Unused sequential element awuser_qq_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6239]
+WARNING: [Synth 8-6014] Unused sequential element wuser_qq_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6245]
+WARNING: [Synth 8-6014] Unused sequential element bid_qq_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6248]
+WARNING: [Synth 8-6014] Unused sequential element buser_qq_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6250]
+WARNING: [Synth 8-6014] Unused sequential element arid_qq_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6253]
+WARNING: [Synth 8-6014] Unused sequential element arlen_qq_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6255]
+WARNING: [Synth 8-6014] Unused sequential element arsize_qq_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6256]
+WARNING: [Synth 8-6014] Unused sequential element arburst_qq_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6257]
+WARNING: [Synth 8-6014] Unused sequential element arlock_qq_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6258]
+WARNING: [Synth 8-6014] Unused sequential element arcache_qq_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6259]
+WARNING: [Synth 8-6014] Unused sequential element arqos_qq_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6261]
+WARNING: [Synth 8-6014] Unused sequential element arregion_qq_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6262]
+WARNING: [Synth 8-6014] Unused sequential element aruser_qq_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6263]
+WARNING: [Synth 8-6014] Unused sequential element rid_qq_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6266]
+WARNING: [Synth 8-6014] Unused sequential element rlast_qq_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6267]
+WARNING: [Synth 8-6014] Unused sequential element ruser_qq_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6270]
+WARNING: [Synth 8-3848] Net s_axi_rdata_i in module/entity axi_protocol_checker_v2_0_2_top does not have driver. [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6506]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_checker_v2_0_2_top' (10#1) [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:5927]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_checker_0' (11#1) [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/synth/axi_protocol_checker_0.sv:58]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port aclk
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[107]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[106]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[105]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[104]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[103]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[102]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[101]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[100]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[99]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[98]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[97]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[96]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[95]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[94]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[93]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[92]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[91]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[90]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[89]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[88]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[87]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[86]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[85]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[84]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[83]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[82]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[81]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[80]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[79]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[78]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[77]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[76]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[75]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[74]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[73]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[72]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[71]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[70]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[69]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[68]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[67]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[66]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[65]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[64]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[63]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[62]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[61]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[60]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[59]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[58]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[57]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[56]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[55]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[54]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[53]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[52]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[51]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[50]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[49]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[48]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[47]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[46]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[45]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[44]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[43]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[42]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[41]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[40]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[39]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[38]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[37]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[36]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[35]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[34]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[33]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[32]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[31]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[30]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[29]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[28]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[27]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[26]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[25]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[24]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[23]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[22]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[21]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[20]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[19]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[18]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[17]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[16]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[15]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[14]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[13]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[12]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[11]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[10]
+WARNING: [Synth 8-3331] design axi_protocol_checker_v2_0_2_reporter has unconnected port pc_status[9]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 458.402 ; gain = 166.602
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 458.402 ; gain = 166.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 458.402 ; gain = 166.602
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/axi_protocol_checker_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/axi_protocol_checker_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/axi_protocol_checker_0.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/axi_protocol_checker_0.xdc] for cell 'inst'
+Parsing XDC File [D:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.runs/axi_protocol_checker_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.runs/axi_protocol_checker_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.152 . Memory (MB): peak = 799.004 ; gain = 5.270
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 799.004 ; gain = 507.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 799.004 ; gain = 507.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property mark_debug = true for pc_status[159]. (constraint file  d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/axi_protocol_checker_0.xdc, line 2).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.runs/axi_protocol_checker_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 799.004 ; gain = 507.203
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
+INFO: [Synth 8-5544] ROM "gen_pipelined.next0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:5756]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:5810]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:5810]
+INFO: [Synth 8-802] inferred FSM for state register 'gen_cam.state_reg' in module 'axi_protocol_checker_v2_0_2_threadcam'
+INFO: [Synth 8-5545] ROM "gen_cam.use_saved_thread" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "gen_cam.next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gen_cam.next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3972]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3972]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3972]
+INFO: [Synth 8-4471] merging register 'ExclId_reg[0][0:0]' into 'ExclId_reg[1][0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3280]
+INFO: [Synth 8-4471] merging register 'ExclReadAddr_reg[1]' into 'ExclId_reg[1][0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3401]
+INFO: [Synth 8-4471] merging register 'ExclReadAddr_reg[0]' into 'ExclId_reg[1][0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3401]
+INFO: [Synth 8-4471] merging register 'ExclReadData_reg[1]' into 'ExclId_reg[1][0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3402]
+INFO: [Synth 8-4471] merging register 'ExclReadData_reg[0]' into 'ExclId_reg[1][0:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3402]
+INFO: [Synth 8-4471] merging register 'ExclAddr_reg[0][31:0]' into 'ExclAddr_reg[1][31:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3403]
+INFO: [Synth 8-4471] merging register 'ExclSize_reg[0][2:0]' into 'ExclSize_reg[1][2:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3404]
+INFO: [Synth 8-4471] merging register 'ExclLen_reg[0][7:0]' into 'ExclLen_reg[1][7:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3405]
+INFO: [Synth 8-4471] merging register 'ExclBurst_reg[1][1:0]' into 'ExclIdValid_reg[1:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3406]
+INFO: [Synth 8-4471] merging register 'ExclBurst_reg[0][1:0]' into 'ExclIdValid_reg[1:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3406]
+INFO: [Synth 8-4471] merging register 'ExclCache_reg[0][3:0]' into 'ExclCache_reg[1][3:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3407]
+INFO: [Synth 8-4471] merging register 'ExclProt_reg[1][2:0]' into 'ExclSize_reg[1][2:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3408]
+INFO: [Synth 8-4471] merging register 'ExclProt_reg[0][2:0]' into 'ExclSize_reg[1][2:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3408]
+INFO: [Synth 8-4471] merging register 'ExclRegion_reg[1][3:0]' into 'ExclCache_reg[1][3:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3410]
+INFO: [Synth 8-4471] merging register 'ExclRegion_reg[0][3:0]' into 'ExclCache_reg[1][3:0]' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3410]
+WARNING: [Synth 8-6014] Unused sequential element ExclId_reg[0] was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3280]
+WARNING: [Synth 8-6014] Unused sequential element ExclReadAddr_reg[1] was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3401]
+WARNING: [Synth 8-6014] Unused sequential element ExclReadAddr_reg[0] was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3401]
+WARNING: [Synth 8-6014] Unused sequential element ExclReadData_reg[1] was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3402]
+WARNING: [Synth 8-6014] Unused sequential element ExclReadData_reg[0] was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3402]
+WARNING: [Synth 8-6014] Unused sequential element ExclAddr_reg[0] was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3403]
+WARNING: [Synth 8-6014] Unused sequential element ExclSize_reg[0] was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3404]
+WARNING: [Synth 8-6014] Unused sequential element ExclLen_reg[0] was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3405]
+WARNING: [Synth 8-6014] Unused sequential element ExclBurst_reg[1] was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3406]
+WARNING: [Synth 8-6014] Unused sequential element ExclBurst_reg[0] was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3406]
+WARNING: [Synth 8-6014] Unused sequential element ExclCache_reg[0] was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3407]
+WARNING: [Synth 8-6014] Unused sequential element ExclProt_reg[1] was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3408]
+WARNING: [Synth 8-6014] Unused sequential element ExclProt_reg[0] was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3408]
+WARNING: [Synth 8-6014] Unused sequential element ExclRegion_reg[1] was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3410]
+WARNING: [Synth 8-6014] Unused sequential element ExclRegion_reg[0] was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:3410]
+INFO: [Synth 8-4471] merging register 's_axi_rvalid_i_reg' into 's_axi_arready_i_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6508]
+WARNING: [Synth 8-6014] Unused sequential element s_axi_rvalid_i_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:6508]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst'. This will prevent further optimization [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/synth/axi_protocol_checker_0.sv:165]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 | 00000000000000000000000000000000
+                OVERFLOW |                               01 | 00000000000000000000000000000010
+                 PENDING |                               10 | 00000000000000000000000000000011
+                ALLOCATE |                               11 | 00000000000000000000000000000001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_cam.state_reg' using encoding 'sequential' in module 'axi_protocol_checker_v2_0_2_threadcam'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 799.004 ; gain = 507.203
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 13    
+	   2 Input      3 Bit       Adders := 8     
+	   2 Input      2 Bit       Adders := 4     
++---Registers : 
+	              160 Bit    Registers := 1     
+	               32 Bit    Registers := 13    
+	               20 Bit    Registers := 4     
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 35    
+	                7 Bit    Registers := 4     
+	                5 Bit    Registers := 10    
+	                4 Bit    Registers := 31    
+	                3 Bit    Registers := 52    
+	                2 Bit    Registers := 19    
+	                1 Bit    Registers := 165   
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 1     
+	   3 Input      9 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   8 Input      7 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 7     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 4     
+	   9 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 28    
+	   4 Input      2 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 10    
+	  12 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 44    
+	   4 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sc_util_v1_0_2_axic_reg_srl_fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 5     
+	  12 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module axi_protocol_checker_v2_0_2_threadcam 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 11    
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+	   4 Input      1 Bit        Muxes := 8     
+Module axi_protocol_checker_v2_0_2_axi4litepc_asr_inline 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module axi_protocol_checker_v2_0_2_axi4pc_asr_inline 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	               20 Bit    Registers := 4     
+	                8 Bit    Registers := 32    
+	                5 Bit    Registers := 10    
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 38    
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 89    
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module axi_protocol_checker_v2_0_2_syn_fifo__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module axi_protocol_checker_v2_0_2_syn_fifo__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module axi_protocol_checker_v2_0_2_syn_fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module axi_protocol_checker_v2_0_2_core 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	              160 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 4     
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 1     
+	   3 Input      9 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   8 Input      7 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 7     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module axi_protocol_checker_v2_0_2_top 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 8     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 36    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "p_2_out0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_2_out0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'aresetn_i_q_reg' into 'LITE.i_Axi4LitePC_asr_inline/ASR_3_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2879]
+WARNING: [Synth 8-6014] Unused sequential element aresetn_i_q_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:2879]
+INFO: [Synth 8-4471] merging register 'w_threadcam/gen_cam.areset_d_reg' into 'r_threadcam/gen_cam.areset_d_reg' [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:5733]
+WARNING: [Synth 8-6014] Unused sequential element w_threadcam/gen_cam.areset_d_reg was removed.  [d:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.srcs/sources_1/ip/axi_protocol_checker_0/hdl/axi_protocol_checker_v2_0_vl_rfs.sv:5733]
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s_AWADDR_sq_reg[4]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s31sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q_reg[14]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q_reg[15]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q_reg[12]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q_reg[13]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q_reg[22]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q_reg[23]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q_reg[16]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q_reg[17]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q_reg[18]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q_reg[19]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q_reg[20]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q_reg[21]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q_reg[30]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q_reg[31]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q1_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q_reg[24]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q_reg[25]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q_reg[26]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q_reg[27]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q_reg[28]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q1_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q_reg[29]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_q1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s_WDATA_sq_reg[4]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s44sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s_WSTRB_sq_reg[4]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s44sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s_ARADDR_sq_reg[4]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s85sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q_reg[14]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q_reg[15]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q_reg[12]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q_reg[13]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q_reg[22]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q_reg[23]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q_reg[16]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q_reg[17]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q_reg[18]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q_reg[19]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q_reg[20]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q_reg[21]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q_reg[30]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q_reg[31]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q1_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q_reg[24]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q_reg[25]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q_reg[26]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q_reg[27]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q_reg[28]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q1_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q_reg[29]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_q1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s_RDATA_sq_reg[4]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s101sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s_AWUSER_sq_reg[4]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s31sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWUSER_q_reg[0]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RUSER_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s_WUSER_sq_reg[4]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s44sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WUSER_q_reg[0]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RUSER_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s_BUSER_sq_reg[4]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s53sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.BUSER_q_reg[0]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RUSER_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s_ARUSER_sq_reg[4]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s85sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARUSER_q_reg[0]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RUSER_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s_RUSER_sq_reg[4]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s101sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RUSER_q_reg[0]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s92_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_eq_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_eq_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_eq_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_eq_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_eq_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_eq_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_eq_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_eq_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WSTRB_eq_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WSTRB_eq_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WSTRB_eq_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WSTRB_eq_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WSTRB_eq_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WSTRB_eq_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WSTRB_eq_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_eq_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_eq_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_eq_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_eq_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RDATA_eq_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RDATA_eq_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RDATA_eq_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RDATA_eq_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWUSER_eq_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWUSER_eq_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWUSER_eq_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWUSER_eq_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWUSER_eq_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWUSER_eq_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWUSER_eq_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WUSER_eq_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WUSER_eq_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WUSER_eq_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WUSER_eq_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WUSER_eq_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WUSER_eq_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WUSER_eq_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.BUSER_eq_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.BUSER_eq_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.BUSER_eq_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.BUSER_eq_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.BUSER_eq_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.BUSER_eq_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.BUSER_eq_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARUSER_eq_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARUSER_eq_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARUSER_eq_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARUSER_eq_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARUSER_eq_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARUSER_eq_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARUSER_eq_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RUSER_eq_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RUSER_eq_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RUSER_eq_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RUSER_eq_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RUSER_eq_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RUSER_eq_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RUSER_eq_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_stage_1_eq_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_stage_1_eq_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_stage_1_eq_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_stage_1_eq_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_stage_1_eq_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_stage_1_eq_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_stage_1_eq_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_stage_1_eq_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_stage_1_eq_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_stage_1_eq_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_stage_1_eq_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_stage_1_eq_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_stage_1_eq_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_stage_1_eq_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WSTRB_stage_1_eq_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WSTRB_stage_1_eq_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WSTRB_stage_1_eq_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WSTRB_stage_1_eq_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WSTRB_stage_1_eq_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WSTRB_stage_1_eq_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WSTRB_stage_1_eq_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_stage_1_eq_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_stage_1_eq_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_stage_1_eq_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_stage_1_eq_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_stage_1_eq_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_stage_1_eq_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ARADDR_stage_1_eq_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RDATA_stage_1_eq_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RDATA_stage_1_eq_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RDATA_stage_1_eq_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RDATA_stage_1_eq_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RDATA_stage_1_eq_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RDATA_stage_1_eq_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.RDATA_stage_1_eq_reg[7] )
+INFO: [Synth 8-3886] merging instance 'inst/CORE/ExclAddr_reg[1][0]' (FDRE) to 'inst/CORE/ExclLen_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/ExclAddr_reg[1][1]' (FDRE) to 'inst/CORE/ExclLen_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/ExclAddr_reg[1][2]' (FDRE) to 'inst/CORE/ExclLen_reg[1][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\awcache_q_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\awcache_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\awcache_q_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\awburst_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\awburst_q_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWUSER_stage_1_eq_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWUSER_stage_1_eq_reg[2] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s1sq_reg[1]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s34sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s7sq_reg[1]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s31sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s5_reg[0]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s59_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s5_reg[1]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s59_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s10sq_reg[1]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s31sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s8_reg[3]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s83_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s8_reg[0]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s83_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s8_reg[1]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s83_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s8_reg[2]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s83_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s13sq_reg[1]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s31sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s11_reg[0]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s92_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s16sq_reg[1]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s31sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s14_reg[6]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s68_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s14_reg[7]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s68_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s14_reg[0]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s68_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s14_reg[1]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s68_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s14_reg[2]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s68_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s14_reg[3]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s68_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s14_reg[4]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s68_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s14_reg[5]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s68_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s19sq_reg[1]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s31sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s22sq_reg[1]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s31sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s25sq_reg[1]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s31sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s23_reg[0]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s77_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s23_reg[1]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s77_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s23_reg[2]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s77_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s28sq_reg[1]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s31sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s26_reg[3]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s83_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s26_reg[0]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s83_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s26_reg[1]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s83_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s26_reg[2]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s83_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s31sq_reg[1]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s32sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s29_reg[3]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s83_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s29_reg[0]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s83_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s29_reg[1]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s83_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s29_reg[2]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s83_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s34sq_reg[1]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s46sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s40sq_reg[1]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s44sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s38_reg' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s95_reg'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s46sq_reg[1]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s55sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s49sq_reg[1]' (FDR) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s53sq_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s47_reg[0]' (FD) to 'inst/CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s92_reg[0]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_2_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_3_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_5_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_6_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_7_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/ASR_8_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_9_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_11_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_12_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_13_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_14_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_15_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_17_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_18_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_19_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_24_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_26_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_32_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_34_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_39_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_40_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_42_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_43_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_44_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/ASR_45_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_46_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_48_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_49_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_50_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_51_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_52_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_54_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_55_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_56_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_62_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_64_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_65_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_73_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_74_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_75_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_76_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_77_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_78_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.ASR_79_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s1sq_reg[2]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_eq_reg[7]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_eq_reg[6]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_eq_reg[5]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_eq_reg[4]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_stage_1_eq_reg[7]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_stage_1_eq_reg[6]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_stage_1_eq_reg[5]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_stage_1_eq_reg[4]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_stage_1_eq_reg[3]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_stage_1_eq_reg[2]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_stage_1_eq_reg[1]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_stage_2_eq_reg[7]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_stage_2_eq_reg[6]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_stage_2_eq_reg[5]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_stage_2_eq_reg[4]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_stage_2_eq_reg[3]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_stage_2_eq_reg[2]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.AWADDR_stage_2_eq_reg[1]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s7sq_reg[2]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s10sq_reg[2]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s13sq_reg[2]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s16sq_reg[2]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s17_reg) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s19sq_reg[2]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s22sq_reg[2]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s25sq_reg[2]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s28sq_reg[2]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s31sq_reg[2]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s32sq_reg[2]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s34sq_reg[2]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_eq_reg[7]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_eq_reg[6]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_eq_reg[5]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_eq_reg[4]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_stage_1_eq_reg[7]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_stage_1_eq_reg[6]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_stage_1_eq_reg[5]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_stage_1_eq_reg[4]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_stage_1_eq_reg[3]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_stage_1_eq_reg[2]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_stage_1_eq_reg[1]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_stage_2_eq_reg[7]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_stage_2_eq_reg[6]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_stage_2_eq_reg[5]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_stage_2_eq_reg[4]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_stage_2_eq_reg[3]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_stage_2_eq_reg[2]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WDATA_stage_2_eq_reg[1]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.s40sq_reg[2]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WSTRB_eq_reg[7]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WSTRB_eq_reg[6]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WSTRB_eq_reg[5]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WSTRB_eq_reg[4]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WSTRB_eq_reg[3]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Synth 8-3332] Sequential element (CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WSTRB_eq_reg[2]) is unused and will be removed from module axi_protocol_checker_v2_0_2_top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 799.004 ; gain = 507.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------------------------------------+----------------+----------------------+--------------+
+|Module Name | RTL Object                                  | Inference      | Size (Depth x Width) | Primitives   | 
++------------+---------------------------------------------+----------------+----------------------+--------------+
+|inst        | CORE/AWCMD/data_ram_reg                     | User Attribute | 8 x 19               | RAM32M x 4   | 
+|inst        | CORE/WCHECK/data_ram_reg                    | User Attribute | 8 x 13               | RAM32M x 3   | 
+|inst        | CORE/gen_rthread_loop[0].RDCAM/data_ram_reg | User Attribute | 8 x 16               | RAM32M x 3   | 
+|inst        | CORE/gen_rthread_loop[1].RDCAM/data_ram_reg | User Attribute | 8 x 16               | RAM32M x 3   | 
++------------+---------------------------------------------+----------------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 799.004 ; gain = 507.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 810.461 ; gain = 518.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+---------------------------------------------+----------------+----------------------+--------------+
+|Module Name | RTL Object                                  | Inference      | Size (Depth x Width) | Primitives   | 
++------------+---------------------------------------------+----------------+----------------------+--------------+
+|inst        | CORE/AWCMD/data_ram_reg                     | User Attribute | 8 x 19               | RAM32M x 4   | 
+|inst        | CORE/WCHECK/data_ram_reg                    | User Attribute | 8 x 13               | RAM32M x 3   | 
+|inst        | CORE/gen_rthread_loop[0].RDCAM/data_ram_reg | User Attribute | 8 x 16               | RAM32M x 3   | 
+|inst        | CORE/gen_rthread_loop[1].RDCAM/data_ram_reg | User Attribute | 8 x 16               | RAM32M x 3   | 
++------------+---------------------------------------------+----------------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 814.691 ; gain = 522.891
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 814.691 ; gain = 522.891
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 814.691 ; gain = 522.891
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 814.691 ; gain = 522.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 814.691 ; gain = 522.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 814.691 ; gain = 522.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 814.691 ; gain = 522.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------------------------+-----------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                     | RTL Name                                                        | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------------------------+-----------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|axi_protocol_checker_v2_0_2_top | CORE/i_Axi4PC_asr_inline/gen_deflt_chks.WSTRB_stage_2_eq_reg[0] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|axi_protocol_checker_v2_0_2_top | CORE/Strb_q3_reg[3]                                             | 3      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|axi_protocol_checker_v2_0_2_top | CORE/CHKSTRB_stage_2_eq_reg[0]                                  | 3      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|axi_protocol_checker_v2_0_2_top | CORE/wchechPop_shift_reg[6]                                     | 7      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++--------------------------------+-----------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+----------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        |          | 4      | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+----------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     2|
+|2     |LUT1   |    11|
+|3     |LUT2   |    69|
+|4     |LUT3   |    58|
+|5     |LUT4   |    48|
+|6     |LUT5   |    57|
+|7     |LUT6   |   159|
+|8     |RAM32M |    10|
+|9     |SRL16E |    11|
+|10    |FDRE   |   702|
+|11    |FDSE   |     9|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------------------+-----------------------------------------------------+------+
+|      |Instance                             |Module                                               |Cells |
++------+-------------------------------------+-----------------------------------------------------+------+
+|1     |top                                  |                                                     |  1136|
+|2     |  inst                               |axi_protocol_checker_v2_0_2_top                      |  1136|
+|3     |    CORE                             |axi_protocol_checker_v2_0_2_core                     |   588|
+|4     |      AWCMD                          |axi_protocol_checker_v2_0_2_syn_fifo__parameterized0 |    59|
+|5     |      \LITE.i_Axi4LitePC_asr_inline  |axi_protocol_checker_v2_0_2_axi4litepc_asr_inline    |     6|
+|6     |      WCHECK                         |axi_protocol_checker_v2_0_2_syn_fifo__parameterized1 |    38|
+|7     |      \gen_rthread_loop[0].RDCAM     |axi_protocol_checker_v2_0_2_syn_fifo                 |    33|
+|8     |      \gen_rthread_loop[1].RDCAM     |axi_protocol_checker_v2_0_2_syn_fifo_1               |    29|
+|9     |      i_Axi4PC_asr_inline            |axi_protocol_checker_v2_0_2_axi4pc_asr_inline        |   306|
+|10    |    r_threadcam                      |axi_protocol_checker_v2_0_2_threadcam                |   118|
+|11    |      \gen_cam.allocate_queue        |sc_util_v1_0_2_axic_reg_srl_fifo__1                  |    24|
+|12    |    w_threadcam                      |axi_protocol_checker_v2_0_2_threadcam_0              |   115|
+|13    |      \gen_cam.allocate_queue        |sc_util_v1_0_2_axic_reg_srl_fifo                     |    24|
++------+-------------------------------------+-----------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 814.691 ; gain = 522.891
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 158 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 814.691 ; gain = 182.289
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 814.691 ; gain = 522.891
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 10 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+435 Infos, 202 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 814.691 ; gain = 533.316
+INFO: [Common 17-1381] The checkpoint 'D:/Documents/AXI/AXI_Lite/AXIL_VivadoProj/AXIL_VivadoProj.runs/axi_protocol_checker_0_synth_1/axi_protocol_checker_0.dcp' has been generated.

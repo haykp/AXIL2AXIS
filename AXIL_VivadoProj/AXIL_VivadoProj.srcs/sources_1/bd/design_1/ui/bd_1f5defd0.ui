@@ -1,0 +1,25 @@
+{
+   ExpandedHierarchyInLayout: "",
+   PinnedBlocks: "",
+   PinnedPorts: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port done_0 -pg 1 -y 170 -defaultsOSRD
+preplace port interrupt_0 -pg 1 -y 90 -defaultsOSRD
+preplace port aclk -pg 1 -y 20 -defaultsOSRD
+preplace port AXI_STR_TXD_0 -pg 1 -y 70 -defaultsOSRD
+preplace port mm2s_prmry_reset_out_n_0 -pg 1 -y 110 -defaultsOSRD
+preplace port aresetn -pg 1 -y 90 -defaultsOSRD
+preplace inst axi_fifo_mm_s_0 -pg 1 -lvl 2 -y 90 -defaultsOSRD
+preplace inst axi_protocol_checker_0 -pg 1 -lvl 1 -y 80 -defaultsOSRD
+preplace netloc axi_protocol_checker_0_m_axi 1 1 1 N
+preplace netloc axi_protocol_checker_0_done 1 1 2 250J 10 570J
+preplace netloc axi_fifo_mm_s_0_AXI_STR_TXD 1 2 1 NJ
+preplace netloc axi_fifo_mm_s_0_interrupt 1 2 1 NJ
+preplace netloc Net1 1 0 2 20 150 250J
+preplace netloc Net 1 0 2 20 10 240J
+preplace netloc axi_fifo_mm_s_0_mm2s_prmry_reset_out_n 1 2 1 NJ
+levelinfo -pg 1 0 130 410 590 -top 0 -bot 190
+",
+}
+0
